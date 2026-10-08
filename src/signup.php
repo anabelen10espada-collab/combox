@@ -10,6 +10,7 @@
     $p_assword = $_POST['psw'];
     $pass_enc = md5($p_assword);
     
+    
     //prepared query
     $sql = "
         INSERT INTO users (
