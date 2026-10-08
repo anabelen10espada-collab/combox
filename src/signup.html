@@ -1,26 +1,42 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comboox</title>
-     <link rel="icon" type="image/png" href="src/icons/main_logo.png">
-</head>  
 
-<body>
-   <h3> Register new Combox user</h3>
-   <label> FirstName :</label><br>
-   <input type="text"><br>
-   <label> LastName :</label><br>
-   <input type="text"><br>
-   <label> Mobile Number:</label><br>
-   <input type="number"><br> 
-   <label> Email:</label><br>
-   <input type="email"><br>
-   <label> Password :</label><br>
-   <input type="password"><br><br>
-   <button> Register</button>
+    <title>Comboox</title>
+
+    <link rel="icon" type="image/png" href="src/icons/main_logo.png">
+</head>
+
+<body bgcolor="#ADC7DE">
     
-   
+    <form name = "register-form" action = "signup.php"method= "post">
+    <center>
+
+        <h3>Register new Combox user</h3>
+
+        <label>First Name:</label><br>
+        <input type="text" name = "fname" required><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name = "lname" required><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="number" name = "mphone" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name = "email" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name = "psw" required><br><br>
+
+        <button>Register</button>
+
+    </center>
+    </form>
+
 </body>
+
 </html>
