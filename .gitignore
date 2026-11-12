@@ -1,5 +1,6 @@
 # Creado por https://www.toptal.com/developers/gitignore/api/node
 # Editar en https://www.toptal.com/developers/gitignore?templates=node
+
 database.php
 config/database.php
 ### Nodo ###
