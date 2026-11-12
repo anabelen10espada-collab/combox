@@ -1,9 +1,6 @@
 <?php
 require("../config/database.php");
 
-
-
-
 $sql = "
     SELECT
         id,
