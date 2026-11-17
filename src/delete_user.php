@@ -1,4 +1,5 @@
 <?php
+
 // Evitar que la página se congele si la conexión remota tarda
 ini_set('default_socket_timeout', 3);
 set_time_limit(5);
@@ -27,4 +28,24 @@ if (isset($supa_conn) && $supa_conn) {
 // 3. Redireccionar inmediatamente al listado
 header("Location: list_users.php");
 exit;
+
+/*
+//get database connection
+require("../config/database.php");
+
+//gET DATA 
+$user_id = $GET['userID'];
+echo $user_id;
+//pPrepare query 
+$sql = "DELETE FROM users WHERE id = $user_id";
+//Execute query 
+$res = pg_query($local_conn, $sql);
+if($res) {
+    echo "<script>alert('User has been created successfylly:::')</script>";
+    header('refresh:0;url=list_users.php');
+} else {
+    //echo "<script>alert('User has not been delete:::')</script>";
+    //header('refresh:0;url=list_users.php');
+    
+}*/
 ?>
